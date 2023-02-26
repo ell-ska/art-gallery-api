@@ -1,0 +1,60 @@
+.gallery {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+}
+
+.gallery__header {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 5.5rem 6.5rem;
+}
+
+.gallery__title {
+    font-size: clamp(2rem, 1.5599rem + 1.8779vw, 3.25rem);
+    font-weight: 400;
+}
+
+.gallery__artworks {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 14.5rem;
+    gap: 7rem;
+    padding: 0 clamp(2rem, 7vw, 6.5rem) 5.5rem;
+    overflow-x: scroll;
+}
+
+.artwork__title {
+    margin-top: 1rem;
+    font-size: var(--font-size-2);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.artwork__artist,
+.artwork__meta {
+    margin-top: .25rem;
+    color: var(--color-700);
+}
+
+.artwork__meta {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery__header {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .gallery__header {
+        margin-block: 1rem 2rem;
+    }
+
+    .gallery__artworks {
+        grid-auto-columns: 100%;
+    }
+}

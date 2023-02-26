@@ -1,0 +1,49 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Optima';
+    font-style: normal;
+    src: url('../assets/fonts/Optima-Medium.woff') format('woff')
+         url('../assets/fonts/Optima-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Optima';
+    font-style: italic;
+    src: url('../assets/fonts/Optima-Italic.woff') format('woff')
+         url('../assets/fonts/Optima-Italic.woff2') format('woff2');
+}
+
+/* Resets */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    color: var(--color-900);
+    font-family: var(--font-humanist-sans);
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select, a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
