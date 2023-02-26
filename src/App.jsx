@@ -1,5 +1,4 @@
-import { useEffect, useState, useRef, forwardRef } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { useEffect, useState, useRef } from 'react'
 import Header from './components/Header'
 import Gallery from './components/Gallery'
 import Footer from './components/Footer'
