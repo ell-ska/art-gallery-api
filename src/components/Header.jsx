@@ -24,8 +24,12 @@ export default ({ searchFn }) => {
     const header = useRef(null)
 
     useEffect(() => {
-
-        header.current.classList.toggle('menu--open')
+        
+        if (menuOpen) {
+            header.current.classList.add('menu--open')
+        } else {
+            header.current.classList.remove('menu--open')
+        }
 
     }, [menuOpen])
 
