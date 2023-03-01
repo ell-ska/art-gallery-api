@@ -3,8 +3,7 @@ import '../css/gallery.css'
 import arrow from '../assets/icons/arrow.svg'
 
 const Gallery = forwardRef(({ artworks, changePage }, ref) => {
-
-    return(
+    return (
         <section className="gallery">
             <div className="gallery__header">
                 <h2 ref={ref} className="gallery__title">Featured Paintings</h2>

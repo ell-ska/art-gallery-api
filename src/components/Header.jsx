@@ -53,7 +53,7 @@ export default ({ searchFn }) => {
                         const inputValue = searchBar.current[0].value
                         searchFn(inputValue)
                     }}>
-                            <input type="text" />
+                        <input type="text" />
                     </form>
                 </nav>
                 <button className="menu-button" onClick={() => setMenuOpen(prev => !prev)}>Menu</button>

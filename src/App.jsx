@@ -68,7 +68,6 @@ function App() {
     title.current.textContent = capitalizeFirstLetter(inputValue)
   }
 
-
   return (
     <div className="App">
       <Header searchFn={search}></Header>
